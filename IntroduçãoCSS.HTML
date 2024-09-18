@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<!-- CSS Interna -->
+		<style>
+
+			p {
+				text-align: center; /* centraliza o texto */
+				color: blue; /* altera a cor da fonte para azul */
+				font-size: 30px; /* altera o tamanho da fonte */
+				padding-top: 10px; /* Formato individual de definição, Distância do conteúdo em relação a borda superior */
+				padding-bottom: 10px; /* Distância do conteúdo em relação a borda inferior */
+				padding-right: 5px; /* Distância do conteúdo em relação a borda direita */
+				padding-left: 5px; /* Distância do conteúdo em relação a borda esquerda */
+
+				/* padding:10px 5px 10px 5px   padding tambem pode ser declarado de forma abreviada, outras tags também permitem a declaração abreviada */
+				/* Ordém dos parametros padding (Top, right, bottom, left)*/
+
+			}
+
+			#para1 {
+
+				color: green;
+				padding: 10px;
+
+			}
+
+			.elemento-com-borda{
+
+				border: 3px solid #ffcc00;
+				padding: 10px;
+
+			}
+			
+			.cascata{
+
+				background-color: grey;
+
+			}
+
+			#para2{
+
+				background-color: orange;
+				color: black;
+			}
+
+			.gradient{
+
+				font-weight: bold;
+				font-size: 4rem;
+				width: 400px;
+				height: 300px;
+				background: linear-gradient(yellow, green); /* Utilizando CSS3 */
+				margin: 20px 30px; /* Forma de declaração abreviada */
+
+			}
+
+			#pagina {
+
+				background: linear-gradient(white, blue);
+			}
+
+
+		</style>
+
+	</head>
+
+	<body id="pagina">
+
+			<h1 style="color:red; text-align: center; font-size: 5rem;">Sou um título com CSS Inline</h1>
+
+			<p>Ao utilizar o seletor de elementos, todos os elementos do mesmo tipo serão afetados pelo estílo</p>
+
+			<p id="para1"> Sou um parágrafo que mesmo tendo um id, sou afetado pelo estilo aplicado via seletor e também pelo estilo aplicado via ID</p>
+
+			<h2 class="elemento-com-borda">Subtítulo com classe utilizada também em outro elemento</h2>
+
+			<div class="elemento-com-borda">
+				
+				<p id="para2">
+
+					sou um paragrafo que mesmo estando dentro de outro elemento também sou afetado pelo estilo aplicado via seletor.
+
+				</p>
+
+			</div>
+
+			<div class="gradient">Sou uma DIV estilizada com CSS3</div>
+	</body>
+
+</html>
