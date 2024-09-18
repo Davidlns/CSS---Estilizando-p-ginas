@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Conseitos Avançados</title>
+
+	<style>
+
+		/* Uso de Pseudoclasse :hover */
+		#link:hover
+		{
+			color: orange;
+		}
+
+		/* Uso de Pseudoelemento */
+		#container-texto::first-line
+		{
+			color: blue;
+			text-transform: uppercase;
+
+		}
+
+		/* Conseitos de Box Model */
+		#container-texto
+		{
+			padding: 20px; /* primeira base da caixa */
+			background-color:orange;
+			border: 30px solid #999; /* Segunda base da caixa */
+			margin-top:80px; /* Terceira base da caixa */
+		}
+
+		#container
+		{
+			width: 1070px;
+			margin: 0 auto;
+			display: flex; /* Defini a utilização do flex box layout */
+			/*flex-direction: row; /* Todos os elementos em uma unica linha */
+			flex-direction: column; /* Todos os elementos em uma unica coluna*/
+		}
+		
+
+	</style>
+
+</head>
+<body>
+
+	<div id="container">
+
+		<h1>PseudoClasses</h1>
+		<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes" id="link">Link</a>
+
+		<h1>Pseudo Elementos</h1>
+		<p id="container-texto">
+
+			CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
+			<br><br>
+			CSS é uma das principais linguagens da open web e é padronizada em navegadores web de acordo com as especificação da W3C. Desenvolvido em níveis, o CSS1 está atualmente obsoleto, o CSS2.1 é uma recomendação e o CSS3, agora dividido em pequenos módulos, está progredindo para a sua padronização.
+
+		</p>
+
+	</div>
+</body>
+</html>
